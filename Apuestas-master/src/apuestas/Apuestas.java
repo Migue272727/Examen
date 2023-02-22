@@ -11,13 +11,13 @@ public class Apuestas {
         Apuesta laApuesta;
         int mi_dinero;
         laApuesta = new Apuesta(1000, 4, 2);
-        operativa_Apuesta(laApuesta);
+        operativa_Apuesta(laApuesta, 2);
         
         mi_dinero = laApuesta.getDinero_disp();
         System.out.println("El dinero que tengo tras las apuestas es " + mi_dinero);
     }
 
-    public static void operativa_Apuesta(Apuesta laApuesta) {
+    public static void operativa_Apuesta(Apuesta laApuesta, int dinero) {
         try {
             System.out.println("Apostando...");
             laApuesta.apostar(25);
